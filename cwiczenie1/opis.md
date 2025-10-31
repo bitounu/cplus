@@ -38,10 +38,41 @@ while (true)
 long long suma2cyfrowych = 0; # long long bo nie wiemy ile tego będzie
 int ilosc2cyfrowych = 0;
 ````
-4.  sprawdzamy czy dwie poprzednie były mniejsze od teraz wprowadzonej (curr):
-    potrzebujemy dwóch zmiennych:
+
+4. sprawdzamy czy mamy już co najmniej dwie poprzednie zmienne:
+    potrzebujemy dwóch zmiennych, które na początku mają wartość zero:
     a. jedna zapamiętuje poprzednią liczbę: poprzednia1
     b. druga zapamiętuje jeszcze poprzednią: poprzednia2
+    musimy też przesuwać wartość zmiennej poprzedniej do zmienne wsześniejszej
+    a wartość obecnej do poprzedniej:
 ```
     int poprzednia2 = 0, poprzednia1 = 0;
+    if (poprzednia2 != 0 || poprzednia1 != 0)
+    {
+    }
+    poprzednia2 = poprzednia1;
+    poprzednia1 = curr;
+```
+
+
+5.  sprawdzamy czy dwie poprzednie były mniejsze od teraz wprowadzonej (curr):
+    sprawdzamy ten warunek w przypadku gdy juz spełniony jest warunek z pkt. 4
+    i oczywiście sprawdzamy czy aktualna liczba jest podzielna przez M bez reszty.
+    Jeśli wszystkie warunki są spełnione to robimy przerwanie pętli
+```
+    if (poprzednia2 != 0 || poprzednia1 != 0) {
+        if (curr % M == 0 && curr > poprzednia1 && curr > poprzednia2) {
+            break;
+        }
+    }
+```
+
+6. wypisujemy średnią ale tylko wtedy kiedy była podana chociaż jedna liczba 2-cyfrowa
+```
+if (ilosc2cyfrowych > 0)
+    cout << "Srednia liczb dwucyfrowych: " << (double)suma2cyfrowych / ilosc2cyfrowych << endl;
+else
+    cout << "Nie wczytano zadnej liczby dwucyfrowej." << endl;
+
+return 0;
 ```
