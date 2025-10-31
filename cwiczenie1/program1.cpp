@@ -3,9 +3,9 @@ using namespace std;
 
 int main() {
     const int M = 5;  // stała, możesz zmienić
-    int prev2 = 0, prev1 = 0, curr;
-    long long sumTwoDigit = 0;
-    int countTwoDigit = 0;
+    int poprzednia2 = 0, poprzednia1 = 0, curr;
+    long long suma2cyfrowych = 0;
+    int ilosc2cyfrowych = 0;
 
     while (true) {
         cout << "Podaj liczbe: ";
@@ -13,24 +13,24 @@ int main() {
 
         // sprawdzenie, czy liczba jest dwucyfrowa
         if ((curr >= 10 && curr <= 99) || (curr <= -10 && curr >= -99)) {
-            sumTwoDigit += curr;
-            countTwoDigit++;
+            suma2cyfrowych += curr;
+            ilosc2cyfrowych++;
         }
 
         // warunek zatrzymania — musi być co najmniej 2 poprzedników
-        if (prev2 != 0 || prev1 != 0) {
-            if (curr % M == 0 && curr > prev1 && curr > prev2) {
+        if (poprzednia2 != 0 || poprzednia1 != 0) {
+            if (curr % M == 0 && curr > poprzednia1 && curr > poprzednia2) {
                 break;
             }
         }
 
         // przesunięcie poprzednich liczb
-        prev2 = prev1;
-        prev1 = curr;
+        poprzednia2 = poprzednia1;
+        poprzednia1 = curr;
     }
 
-    if (countTwoDigit > 0)
-        cout << "Srednia liczb dwucyfrowych: " << (double)sumTwoDigit / countTwoDigit << endl;
+    if (ilosc2cyfrowych > 0)
+        cout << "Srednia liczb dwucyfrowych: " << (double)suma2cyfrowych / ilosc2cyfrowych << endl;
     else
         cout << "Nie wczytano zadnej liczby dwucyfrowej." << endl;
 
