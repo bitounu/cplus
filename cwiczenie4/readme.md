@@ -1,5 +1,6 @@
 Napisać program, który wczytuje ciąg znaków aż do napotkania kolejno dwóch jednakowych znaków równych pierwszemu wczytanemu. Wydrukować informację, czego wczytano więcej: małych liter czy dużych liter (nie licząc tych dwóch ostatnich znaków).
 
+
 1. prosimy o pierwszy znak, którego będziemy potem poszukiwać,
     zapisujemy go w zmiennej 'first':
 ```
@@ -13,3 +14,5 @@ Napisać program, który wczytuje ciąg znaków aż do napotkania kolejno dwóch
 ```
     int small = 0, big = 0;
 ```
+
+3. 
