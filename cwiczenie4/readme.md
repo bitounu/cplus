@@ -1,0 +1,1 @@
+Napisać program, który wczytuje ciąg znaków aż do napotkania kolejno dwóch jednakowych znaków równych pierwszemu wczytanemu. Wydrukować informację, czego wczytano więcej: małych liter czy dużych liter (nie licząc tych dwóch ostatnich znaków).
