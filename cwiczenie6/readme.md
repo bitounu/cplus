@@ -1,0 +1,1 @@
+Napisać program, który wczytuje liczbę całkowitą n, wymuszając, by była ona jednocyfrowa dodatnia, a następnie wczytuje n znaków. Wydrukować, ile razy wystąpiła w tym ciągu znaków para nawiasów kwadratowych [ ] i ile razy wystąpiły po kolei za sobą trzy znaki określone stałą X.

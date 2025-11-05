@@ -1,0 +1,1 @@
+Napisać program, który wczytuje liczby całkowite tak długo, póki są na przemian dodatnie i ujemne. Wydrukować, jaki był procentowy udział liczb parzystych i jaki był procentowy udział liczb jednocyfrowych w tym ciągu.

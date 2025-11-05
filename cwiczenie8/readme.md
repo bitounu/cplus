@@ -1,0 +1,1 @@
+Napisać program, który wczytuje liczby całkowite aż do wczytania liczby podzielnej przez P (P- stała) i zarazem większej od obu poprzedników. Wydrukować najmniejszą ze wszystkich wczytanych liczb parzystych lub informację, że takiej liczby nie było.

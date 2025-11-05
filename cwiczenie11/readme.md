@@ -1,0 +1,1 @@
+Napisać program, który wczytuje znaki tak długo, póki są to na przemian małe litery i duże litery (pierwszy znak może być dowolną literą). Wydrukować informację, ile w tym ciągu było liter x, gdzie x należy wcześniej wczytać i wymusić, by była to dowolna litera.

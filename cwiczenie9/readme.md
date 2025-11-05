@@ -1,0 +1,1 @@
+Napisać program, który wczytuje liczby całkowite tak długo, aż powtórzą się po sobie trzy pierwsze w odwrotnej kolejności (tzn. jeśli pierwsze trzy wczytane liczby są równe 1, 2, 3, to wczytujemy, dopóki użytkownik nie poda kolejno liczb 3, 2, 1) oraz wczytane zostanie co najmniej k liczb podzielnych przez 2 (k podaje użytkownik). Wyświetlić sumę ujemnych liczb z tego ciągu.
